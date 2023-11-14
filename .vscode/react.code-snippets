@@ -1,0 +1,43 @@
+{
+    "UseState Hook": {
+      "prefix": "useState",
+      "body": ["const [${1:state}, set${1:State}] = useState(${2:initialValue});"],
+      "description": "Insert useState hook"
+    },
+    "UseEffect Hook": {
+      "prefix": "useEffect",
+      "body": [
+        "useEffect(() => {",
+        "\t${1:// effect function}",
+        "\treturn () => {",
+        "\t\t${2:// cleanup function}",
+        "\t}",
+        "}, [${3:deps}]);"
+      ],
+      "description": "Insert useEffect hook"
+    },
+    "Arrow Function": {
+      "prefix": "af",
+      "body": ["const ${1:functionName} = (${2:params}) => {", "\t$0", "};"],
+      "description": "Arrow Function snippet"
+    },
+    "Return Statement": {
+      "prefix": "r",
+      "body": ["return $0;"],
+      "description": "Return statement snippet"
+    },
+    "Next.js page Component": {
+      "prefix": "page",
+      "body": [
+        "",
+        "const ${1:PageName} = () => {",
+        "    return (",
+        "        <div>${2}</div>",
+        "    );",
+        "};",
+        "",
+        "export default ${1:PageName};"
+      ]
+    }
+  }
+  
